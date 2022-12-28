@@ -1,0 +1,432 @@
+_type: export
+__export_format: 4
+__export_date: 2022-12-28T03:29:19.796Z
+__export_source: insomnia.desktop.app:v2022.7.0
+resources:
+  - _id: req_3bb2114dc0b94e408bfdb8e9cd19c2c5
+    parentId: fld_5c5a7f5c4f7146fc897575eddc8222af
+    modified: 1672174311835
+    created: 1672141389124
+    url: http://localhost:3333/users
+    name: Criar usuário
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Ezio Lemes",
+        	"email": "ezio@email.com",
+        	"password": "123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1672141389124
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_5c5a7f5c4f7146fc897575eddc8222af
+    parentId: fld_c4d3171d3c014a49b21abe1581c995bd
+    modified: 1672141409262
+    created: 1672141409262
+    name: users
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672141409262
+    _type: request_group
+  - _id: fld_c4d3171d3c014a49b21abe1581c995bd
+    parentId: wrk_6b96df0890de44b0bffdeefef42c595e
+    modified: 1672141399311
+    created: 1672141399311
+    name: API Pizzaria
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672141399311
+    _type: request_group
+  - _id: wrk_6b96df0890de44b0bffdeefef42c595e
+    parentId: null
+    modified: 1672141389113
+    created: 1672141389113
+    name: New Document
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_dfbf8ab2c63e47d2a69e53707b2d3810
+    parentId: fld_5c5a7f5c4f7146fc897575eddc8222af
+    modified: 1672174373552
+    created: 1672153056408
+    url: http://localhost:3333/session
+    name: Logar usuario
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "ezio@email.com",
+        	"password": "123456"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1672141389074
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_ab02881c9236426d8bd55042d98d923e
+    parentId: fld_5c5a7f5c4f7146fc897575eddc8222af
+    modified: 1672189707614
+    created: 1672171174208
+    url: http://localhost:3333/me
+    name: Detalhes do usuário
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+      disabled: false
+    metaSortKey: -1672141389024
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_50de04f574154a478a91ab7d616ebcef
+    parentId: fld_84e107d797c8411f9416d480849b43cc
+    modified: 1672189745267
+    created: 1672175962808
+    url: http://localhost:3333/category
+    name: Criar categoria
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Pizzas"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+    metaSortKey: -1672175962808
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_84e107d797c8411f9416d480849b43cc
+    parentId: fld_c4d3171d3c014a49b21abe1581c995bd
+    modified: 1672175958186
+    created: 1672175958186
+    name: category
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672175958186
+    _type: request_group
+  - _id: req_6130f08103b34626bc367b5c228a5191
+    parentId: fld_84e107d797c8411f9416d480849b43cc
+    modified: 1672189718961
+    created: 1672176860314
+    url: http://localhost:3333/category
+    name: Listar todas categorias
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+    metaSortKey: -1672158675966
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2200d7e92ca54dd29b8bf68dfa85356e
+    parentId: fld_6ded4d225d93475c8054a1cda359bc96
+    modified: 1672193413340
+    created: 1672179013881
+    url: http://localhost:3333/product
+    name: Cadastrar Produto
+    description: ""
+    method: POST
+    body:
+      mimeType: multipart/form-data
+      params:
+        - id: pair_ffad9724f220405aab495fbf73a7643f
+          name: name
+          value: Coca Cola 2 Litros
+          description: ""
+        - id: pair_e06eab93caf74171ac0d0714f06f0f04
+          name: price
+          value: "10"
+          description: ""
+        - id: pair_5b30c8d4f006420098f24807952803ba
+          name: description
+          value: Coca Cola lata 2 Litros
+          description: ""
+        - id: pair_c8e804f0a5484b76b5536166d3db94ce
+          name: file
+          value: ""
+          description: ""
+          type: file
+          fileName: /home/ezio/Downloads/coca_2L.jpg
+        - id: pair_6bcd0cd4bc2845d6a6ecbafe60c07879
+          name: category_id
+          value: 2bed22f5-feff-4ced-b74c-37b3e4e9a406
+          description: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: multipart/form-data
+    authentication:
+      type: bearer
+      prefix: Bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+    metaSortKey: -1672180804716
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_6ded4d225d93475c8054a1cda359bc96
+    parentId: fld_c4d3171d3c014a49b21abe1581c995bd
+    modified: 1672182420226
+    created: 1672182420226
+    name: product
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672182420226
+    _type: request_group
+  - _id: req_70585cef973442798185751ff3520621
+    parentId: fld_6ded4d225d93475c8054a1cda359bc96
+    modified: 1672193449846
+    created: 1672193239107
+    url: http://localhost:3333/category/product
+    name: Listar produtos por categoria
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_6c54e026e6e241608f72e6641a1315c1
+        name: category_id
+        value: 2bed22f5-feff-4ced-b74c-37b3e4e9a406
+        description: ""
+    headers: []
+    authentication:
+      type: bearer
+      prefix: Bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+    metaSortKey: -1672178383762
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_b2514e36050b4fa0b26169825acbf221
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672195871210
+    created: 1672194575649
+    url: http://localhost:3333/order
+    name: Criar uma ORDER - Abrir mesa
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"table": 12
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+    metaSortKey: -1672194575649
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_7a24479df1c9495ea744ccc1fecb0176
+    parentId: fld_c4d3171d3c014a49b21abe1581c995bd
+    modified: 1672194573939
+    created: 1672194573939
+    name: order
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1672194573939
+    _type: request_group
+  - _id: req_0b7ac07468ed48b682f16dc5e6ddb6e9
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672195886088
+    created: 1672195740538
+    url: http://localhost:3333/order
+    name: Deletar uma order - pedido
+    description: ""
+    method: DELETE
+    body: {}
+    parameters:
+      - id: pair_c1c906bfa3ab4dc6a96c3737b62e7383
+        name: order_id
+        value: 4ce722ea-eea5-465e-965f-7235a329bb26
+        description: ""
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+    metaSortKey: -1672187690182.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_7a826aff40d14c52a89ef516c85e823b
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672196941184
+    created: 1672196706569
+    url: http://localhost:3333/order/add
+    name: Add Item Order
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"order_id": "82a97286-4aec-4e75-9d4a-fca26811ec7c",
+        	"product_id": "9daac335-32f4-4099-bf7b-49af4d10435c",
+        	"amount": 1
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+    metaSortKey: -1672191132915.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_234bf7840bd946baa2e2b1b6b73d190b
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672197614367
+    created: 1672197570206
+    url: http://localhost:3333/order/remove
+    name: Remove Item
+    description: ""
+    method: DELETE
+    body: {}
+    parameters:
+      - id: pair_c1c906bfa3ab4dc6a96c3737b62e7383
+        name: item_id
+        value: 5be182e2-a223-4808-8993-d5cde9a3b8b7
+        description: ""
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      prefix: Bearer
+    metaSortKey: -1672184247449.25
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_07e593ed99f65fa14bc78ff3e68f99ac7053970e
+    parentId: wrk_6b96df0890de44b0bffdeefef42c595e
+    modified: 1672141389118
+    created: 1672141389118
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1672141389118
+    _type: environment
+  - _id: jar_00aa3cad929f975534d5cba32e1ed1e84fb6f41a
+    parentId: wrk_6b96df0890de44b0bffdeefef42c595e
+    modified: 1672141389120
+    created: 1672141389120
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_444662496f934ec9a18e76fc53404b44
+    parentId: wrk_6b96df0890de44b0bffdeefef42c595e
+    modified: 1672188887928
+    created: 1672141389113
+    fileName: Ezio
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_4e3445c96f6e47f995414e78e2387d0a
+    parentId: wrk_6b96df0890de44b0bffdeefef42c595e
+    modified: 1672141389126
+    created: 1672141389126
+    name: Example Test Suite
+    _type: unit_test_suite
