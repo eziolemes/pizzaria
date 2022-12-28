@@ -1,6 +1,6 @@
 _type: export
 __export_format: 4
-__export_date: 2022-12-28T03:29:19.796Z
+__export_date: 2022-12-28T12:39:37.507Z
 __export_source: insomnia.desktop.app:v2022.7.0
 resources:
   - _id: req_3bb2114dc0b94e408bfdb8e9cd19c2c5
@@ -92,7 +92,7 @@ resources:
     _type: request
   - _id: req_ab02881c9236426d8bd55042d98d923e
     parentId: fld_5c5a7f5c4f7146fc897575eddc8222af
-    modified: 1672189707614
+    modified: 1672225242289
     created: 1672171174208
     url: http://localhost:3333/me
     name: Detalhes do usuário
@@ -103,7 +103,7 @@ resources:
     headers: []
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
       disabled: false
     metaSortKey: -1672141389024
@@ -117,7 +117,7 @@ resources:
     _type: request
   - _id: req_50de04f574154a478a91ab7d616ebcef
     parentId: fld_84e107d797c8411f9416d480849b43cc
-    modified: 1672189745267
+    modified: 1672225258686
     created: 1672175962808
     url: http://localhost:3333/category
     name: Criar categoria
@@ -135,7 +135,7 @@ resources:
         value: application/json
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
     metaSortKey: -1672175962808
     isPrivate: false
@@ -158,7 +158,7 @@ resources:
     _type: request_group
   - _id: req_6130f08103b34626bc367b5c228a5191
     parentId: fld_84e107d797c8411f9416d480849b43cc
-    modified: 1672189718961
+    modified: 1672225252409
     created: 1672176860314
     url: http://localhost:3333/category
     name: Listar todas categorias
@@ -169,7 +169,7 @@ resources:
     headers: []
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
     metaSortKey: -1672158675966
     isPrivate: false
@@ -182,7 +182,7 @@ resources:
     _type: request
   - _id: req_2200d7e92ca54dd29b8bf68dfa85356e
     parentId: fld_6ded4d225d93475c8054a1cda359bc96
-    modified: 1672193413340
+    modified: 1672226930491
     created: 1672179013881
     url: http://localhost:3333/product
     name: Cadastrar Produto
@@ -193,25 +193,25 @@ resources:
       params:
         - id: pair_ffad9724f220405aab495fbf73a7643f
           name: name
-          value: Coca Cola 2 Litros
+          value: Pizza cababresa G
           description: ""
         - id: pair_e06eab93caf74171ac0d0714f06f0f04
           name: price
-          value: "10"
+          value: "46"
           description: ""
         - id: pair_5b30c8d4f006420098f24807952803ba
           name: description
-          value: Coca Cola lata 2 Litros
+          value: Pizza calabresa grande com queijo
           description: ""
         - id: pair_c8e804f0a5484b76b5536166d3db94ce
           name: file
           value: ""
           description: ""
           type: file
-          fileName: /home/ezio/Downloads/coca_2L.jpg
+          fileName: C:\Users\ezio\Desktop\calabresa.jpg
         - id: pair_6bcd0cd4bc2845d6a6ecbafe60c07879
           name: category_id
-          value: 2bed22f5-feff-4ced-b74c-37b3e4e9a406
+          value: 8fbe2fa0-26fd-4174-87d3-4fd551d5b439
           description: ""
     parameters: []
     headers:
@@ -220,7 +220,7 @@ resources:
     authentication:
       type: bearer
       prefix: Bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
     metaSortKey: -1672180804716
     isPrivate: false
     settingStoreCookies: true
@@ -242,7 +242,7 @@ resources:
     _type: request_group
   - _id: req_70585cef973442798185751ff3520621
     parentId: fld_6ded4d225d93475c8054a1cda359bc96
-    modified: 1672193449846
+    modified: 1672225263933
     created: 1672193239107
     url: http://localhost:3333/category/product
     name: Listar produtos por categoria
@@ -258,7 +258,7 @@ resources:
     authentication:
       type: bearer
       prefix: Bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
     metaSortKey: -1672178383762
     isPrivate: false
     settingStoreCookies: true
@@ -270,7 +270,7 @@ resources:
     _type: request
   - _id: req_b2514e36050b4fa0b26169825acbf221
     parentId: fld_7a24479df1c9495ea744ccc1fecb0176
-    modified: 1672195871210
+    modified: 1672226996203
     created: 1672194575649
     url: http://localhost:3333/order
     name: Criar uma ORDER - Abrir mesa
@@ -280,7 +280,7 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"table": 12
+        	"table": 60
         }
     parameters: []
     headers:
@@ -288,7 +288,7 @@ resources:
         value: application/json
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
     metaSortKey: -1672194575649
     isPrivate: false
@@ -311,7 +311,7 @@ resources:
     _type: request_group
   - _id: req_0b7ac07468ed48b682f16dc5e6ddb6e9
     parentId: fld_7a24479df1c9495ea744ccc1fecb0176
-    modified: 1672195886088
+    modified: 1672225279612
     created: 1672195740538
     url: http://localhost:3333/order
     name: Deletar uma order - pedido
@@ -326,7 +326,7 @@ resources:
     headers: []
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
     metaSortKey: -1672187690182.5
     isPrivate: false
@@ -339,7 +339,7 @@ resources:
     _type: request
   - _id: req_7a826aff40d14c52a89ef516c85e823b
     parentId: fld_7a24479df1c9495ea744ccc1fecb0176
-    modified: 1672196941184
+    modified: 1672227724447
     created: 1672196706569
     url: http://localhost:3333/order/add
     name: Add Item Order
@@ -349,9 +349,9 @@ resources:
       mimeType: application/json
       text: |-
         {
-        	"order_id": "82a97286-4aec-4e75-9d4a-fca26811ec7c",
-        	"product_id": "9daac335-32f4-4099-bf7b-49af4d10435c",
-        	"amount": 1
+        	"order_id": "4ba442f5-b01d-479c-8131-39e10d23c598",
+        	"product_id": "098797bb-bfa3-46ee-8942-a17f4a9e879a",
+        	"amount": 2
         }
     parameters: []
     headers:
@@ -359,7 +359,7 @@ resources:
         value: application/json
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
     metaSortKey: -1672191132915.75
     isPrivate: false
@@ -372,7 +372,7 @@ resources:
     _type: request
   - _id: req_234bf7840bd946baa2e2b1b6b73d190b
     parentId: fld_7a24479df1c9495ea744ccc1fecb0176
-    modified: 1672197614367
+    modified: 1672225274800
     created: 1672197570206
     url: http://localhost:3333/order/remove
     name: Remove Item
@@ -387,7 +387,7 @@ resources:
     headers: []
     authentication:
       type: bearer
-      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxODk2OTYsImV4cCI6MTY3NDc4MTY5Niwic3ViIjoiOTQyOTJlZWYtYjk4YS00OTM1LWJjZTEtY2RkY2M1MzA2MzViIn0.UuquotSm4AI3VYOZkbCEvqzccYM5fBTDFpeuY-bRy7M
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
       prefix: Bearer
     metaSortKey: -1672184247449.25
     isPrivate: false
@@ -398,7 +398,121 @@ resources:
     settingRebuildPath: true
     settingFollowRedirects: global
     _type: request
-  - _id: env_07e593ed99f65fa14bc78ff3e68f99ac7053970e
+  - _id: req_0a25b3c711c54d7185d0d1a272121222
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672227734102
+    created: 1672226413681
+    url: http://localhost:3333/order/send
+    name: Send Order
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"order_id": "4ba442f5-b01d-479c-8131-39e10d23c598"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
+      prefix: Bearer
+    metaSortKey: -1672189411549.125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1e7d320ec8184254a03b003ff0651ccf
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672227613727
+    created: 1672227597858
+    url: http://localhost:3333/orders
+    name: List Orders
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
+      prefix: Bearer
+    metaSortKey: -1672188550865.8125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_08c7eba0a8774998a293bda4cfaca6e4
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672229934881
+    created: 1672229789650
+    url: http://localhost:3333/order/detail
+    name: Detalhes de uma order
+    description: ""
+    method: GET
+    body: {}
+    parameters:
+      - id: pair_92ec252f3839495cbbc796e5014ef508
+        name: order_id
+        value: 93c39a2a-2147-435b-a0ea-0eda4dc4df76
+        description: ""
+    headers: []
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
+      prefix: Bearer
+    metaSortKey: -1672188120524.1562
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1126107dd86c4ad09bdf54cce0a40802
+    parentId: fld_7a24479df1c9495ea744ccc1fecb0176
+    modified: 1672230963680
+    created: 1672230770029
+    url: http://localhost:3333/order/finish
+    name: Finish Order
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"order_id": "93c39a2a-2147-435b-a0ea-0eda4dc4df76"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication:
+      type: bearer
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXppbyBMZW1lcyIsImVtYWlsIjoiZXppb0BlbWFpbC5jb20iLCJpYXQiOjE2NzIxNzQzNzUsImV4cCI6MTY3NDc2NjM3NSwic3ViIjoiMWY3NzIyMGQtNGVjMi00MTdlLTgyMTQtYzc3OTdjOWVkOTc5In0.AHd9Euj5Ovh23a5mXuGBW2UrO5oBa_Q1evY8IR8z-js
+      prefix: Bearer
+    metaSortKey: -1672188981207.4688
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_00aa3cad929f975534d5cba32e1ed1e84fb6f41a
     parentId: wrk_6b96df0890de44b0bffdeefef42c595e
     modified: 1672141389118
     created: 1672141389118
