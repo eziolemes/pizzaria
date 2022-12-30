@@ -10,6 +10,7 @@ import { Input } from "../components/ui/Input";
 import { Button } from "../components/ui/Button";
 
 import { AuthContext } from "../contexts/AuthContext";
+import { toast } from 'react-toastify';
 
 import Link from "next/link";
 
@@ -23,11 +24,20 @@ export default function Home() {
   async function handleLogin(event: FormEvent) {
     event.preventDefault();
 
+    if (email === '' || password === '') {
+      toast.error("PREENCHA OS DADOS");
+      return;
+    }
+
+    setLoading(true);
+
     let data = {
       email,
       password
     }
     await signIn(data);
+
+    setLoading(false);
   }
 
   return <>
@@ -54,7 +64,7 @@ export default function Home() {
           />
           <Button 
             type="submit"
-            loading={false}
+            loading={loading}
           >
             Acessar
           </Button>
