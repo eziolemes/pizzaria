@@ -27,8 +27,9 @@ export function AuthProvider({ children }: AuthProviderProps) {
   const [user, setUser] = useState<UserProps>();
   const isAuthenticated = !!user; // !! converte para booleano, se user tiver null, retorna false se tiver retorna true
 
-  async function signIn(){
-    alert('clicou no login')
+  async function signIn({ email, password }: SignInProps){
+    console.log("dados para logar ", email);
+    console.log("senha ", password);
   }
 
   return(
