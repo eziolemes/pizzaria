@@ -1,9 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from '../../styles/home.module.scss';
-import { Input } from "../components/ui/Input";
 
 import logoImg from '../../public/logo.svg';
+
+import { Input } from "../components/ui/Input";
+import { Button } from "../components/ui/Button";
+
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,7 +29,18 @@ export default function Home() {
               placeholder="Digite sua senha"
               type="password"
             />
+            <Button 
+              type="submit"
+              loading={false}
+            >
+              Cadastrar
+            </Button>
           </form>
+
+          <Link href="/signup">
+            <a className={styles.text}>Não possui conta? Cadastre-se</a>
+          </Link>
+
         </div>
       </div>
     </>
