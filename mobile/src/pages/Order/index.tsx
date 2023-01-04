@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { 
   View,
   Text,
   StyleSheet,
   TouchableOpacity,
-  TextInput
+  TextInput,
+  Modal
 } from "react-native";
 
 import { Feather } from '@expo/vector-icons';
@@ -12,6 +13,7 @@ import { Feather } from '@expo/vector-icons';
 import { useRoute, RouteProp, useNavigation } from "@react-navigation/native";
 
 import { api } from "../../services/api";
+import { ModalPicker } from "../../components/ModalPicker";
 
 type RouteDetailParams = {
   Order:{
@@ -20,11 +22,33 @@ type RouteDetailParams = {
   }
 }
 
+export type CategoryProps = {
+  id: string;
+  name: string;
+}
+
 type OrderRouteProps = RouteProp<RouteDetailParams, 'Order'>;
 
 export default function Order() {
   const route = useRoute<OrderRouteProps>();
   const navigation = useNavigation();
+
+  const [category, setCategory] = useState<CategoryProps[] | []>([]);
+  const [categorySelected, setCategorySelected] = useState<CategoryProps>();
+  const [modalCategoryVisible, setModalCategoryVisible] = useState(false);
+
+  const [amount, setAmount] = useState('1');
+
+  useEffect(() => {
+    async function loadInfo() {
+      const response = await api.get('/category');
+
+      setCategory(response.data);
+      setCategorySelected(response.data[0]);
+    }
+
+    loadInfo();
+  }, []);
 
   async function handleCloseOrder() {
     try {
@@ -40,6 +64,10 @@ export default function Order() {
     }
   }
 
+  function handleChangeCategory(item: CategoryProps) {
+    setCategorySelected(item);
+  }
+
   return(
     <View style={styles.container}>
 
@@ -50,12 +78,16 @@ export default function Order() {
         </TouchableOpacity>
       </View>
 
-      <TouchableOpacity style={styles.input}>
-        <Text style={{ color: '#FFF' }}>Pizzas</Text>
-      </TouchableOpacity>
+      {category.length !== 0 && (
+        <TouchableOpacity style={styles.input} onPress={() => setModalCategoryVisible(true) }>
+          <Text style={{ color: '#FFF' }}>
+            {categorySelected?.name}
+          </Text>
+        </TouchableOpacity>
+      )}
 
       <TouchableOpacity style={styles.input}>
-        <Text style={{ color: '#FFF' }}>Pizza de cabalresa</Text>
+        <Text style={{ color: '#FFF' }}>Pizza de calabresa</Text>
       </TouchableOpacity>
 
       <View style={styles.qtdContainer}>
@@ -65,7 +97,8 @@ export default function Order() {
           placeholder="1"
           placeholderTextColor="gray"
           keyboardType="numeric"
-          value='1'
+          value={amount}
+          onChangeText={setAmount}
         />
       </View>
 
@@ -78,6 +111,18 @@ export default function Order() {
           <Text style={styles.buttonText}>Avançar</Text>
         </TouchableOpacity>
       </View>
+
+      <Modal
+        transparent={true}
+        visible={modalCategoryVisible}
+        animationType="fade"
+      >
+        <ModalPicker
+          handleCloseModal={ () => setModalCategoryVisible(false) }
+          options={category}
+          selectedItem={handleChangeCategory}
+        />
+      </Modal>
 
     </View>
   )
